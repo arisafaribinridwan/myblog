@@ -1,0 +1,50 @@
+baseURL: 'http://example.org/'
+languageCode: 'en-us'
+title: Ari Safari
+theme: PaperMod
+paginate: 2
+enableEmoji: true
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 30
+
+
+params:
+  homeInfoParams:
+    Title: "Hi there 👋" 
+    Content: Welcome to my blog, here you can find a lot of extraordinary journey
+  socialIcons: # optional
+    - name: "facebook"
+      url: "www.google.com"
+    - name: "instagram"
+      url: "www.instagram.com"
+    - name: "github"
+      url: "www.github.com"
+
+  assets:
+    favicon: /images/logo.svg
+  label:
+    text: ""
+    icon: /images/logo.svg
+    iconHeight: 32
+  cover:
+    linkFullImages: true
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowShareButtons: true
+  
+
+  
