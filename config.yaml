@@ -2,23 +2,27 @@ baseURL: 'http://example.org/'
 languageCode: 'en-us'
 title: Ari Safari
 theme: PaperMod
-paginate: 2
+paginate: 5
 enableEmoji: true
 
 menu:
   main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
     - identifier: categories
       name: Categories
       url: /categories/
-      weight: 10
+      weight: 20
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 20
+      weight: 30
     - identifier: archives
       name: Archives
       url: /archives/
-      weight: 30
+      weight: 40
 
 
 params:
@@ -33,6 +37,27 @@ params:
     - name: "github"
       url: "www.github.com"
 
+  profileMode:
+    enabled: true
+    title: "Hi there 👋" # optional default will be site title
+    subtitle: "Welcome to my blog, here you can find a lot of extraordinary journey"
+    imageUrl: "/images/logo.svg" # optional
+    imageTitle: "<title of image as alt>" # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+    - name: Archives
+      url: "/archives/"
+    - name: Github
+      url: "https://github.com/"
+
+  socialIcons: # optional
+    - name: "instagram"
+      url: "www.instagram.com"
+    - name: "github"
+      url: "www.github.com"
+
+
   assets:
     favicon: /images/logo.svg
   label:
@@ -41,6 +66,7 @@ params:
     iconHeight: 32
   cover:
     linkFullImages: true
+    hiddenInList: true
   ShowBreadCrumbs: true
   ShowReadingTime: true
   ShowPostNavLinks: true
